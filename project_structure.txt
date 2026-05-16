@@ -1,0 +1,64 @@
+Listado de rutas de carpetas
+El n�mero de serie del volumen es EE9E-643C
+C:.
+|   .gitignore
+|   config.py
+|   estructura.txt
+|   main.py
+|   README.md
+|   
++---data
+|       2017PurchasePricesDec.csv
+|       BegInvFINAL12312016.csv
+|       EndInvFINAL12312016.csv
+|       InvoicePurchases12312016.csv
+|       PurchasesFINAL12312016.csv
+|       SalesFINAL12312016.csv
+|       
++---db
+|   |   database.py
+|   |   inventory.duckdb
+|   |   __init__.py
+|           
++---output
+|       report.html
+|       report.pdf
+|       
++---src
+|   +---ingestion
+|   |   |   csv_ingestion.py
+|   |   |   __init__.py
+|   |           
+|   +---queries
+|   |   +---clean
+|   |   |       clean_inventory.sql
+|   |   |       clean_purchases.sql
+|   |   |       clean_purchases_prices.sql
+|   |   |       clean_sales.sql
+|   |   |       
+|   |   +---ingestion
+|   |   |       csv_ingestion.sql
+|   |   |       
+|   |   +---marts
+|   |   |       mart_profit.sql
+|   |   |       
+|   |   \---reports
+|   |           summary_metrics.sql
+|   |           top_brands.sql
+|   |           top_products.sql
+|   |           unprofitable.sql
+|   |           
+|   +---report
+|   |   |   analisys.py
+|   |   |   report_builder.py
+|   |   |   __init__.py
+|   |           
+|   +---templates
+|   |       report.html
+|   |       
+|   \---utils
+|       |   logger.py
+|       |   query_loader.py
+|       |   __init__.py
+|               
++---tests
