@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Profitability Report</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: #1f2937;
+        }
+
+        h2 {
+            margin-top: 50px;
+            color: #111827;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .card-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .card p {
+            font-size: 28px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        th {
+            background-color: #111827;
+            color: white;
+            text-align: left;
+            padding: 14px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tr:hover {
+            background-color: #f9fafb;
+        }
+
+        .negative {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+ <div class="container">
+    <h1>Annie Sales Report</h1>
+
+    <p>
+        Analysis of product and brand profitability for Annie's liquor distribution business.
+        During the evaluated period, the operation reached a total gross profit of $138,471,270.04 dollars, as a result of sales of 32,904,417 units. This performance reflects strong operational efficiency, maintaining an average profit margin of 30.66%. These figures confirm not only the profitability of the business model, but also balanced management. <br>
+    </p>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Total Profit</h3>
+            <p>$138,471,270.04</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Units Sold</h3>
+            <p>32,904,417</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Margin</h3>
+            <p>30.66%</p>
+        </div>
+
+    </div>
+        
+    <h2>Top Products by Profit</h2>
+        <p>
+            This table shows the products that contribute the most absolute profit in dollars to the business.<br>
+        <b>How to read it:</b><br>
+            These are the “revenue drivers” of the company. A higher gross profit means the product has a larger direct impact on total earnings, regardless of its efficiency or margin rate. <br>
+        </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Profit</th>
+                <th>Margin %</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        
+            <tr>
+                <td>Jack Daniels No 7 Black</td>
+                <td>$1370292.28</td>
+                <td>26.86%</td>
+            </tr>
+        
+            <tr>
+                <td>Ketel One Vodka</td>
+                <td>$1249613.8</td>
+                <td>29.59%</td>
+            </tr>
+        
+            <tr>
+                <td>Capt Morgan Spiced Rum</td>
+                <td>$1235310.84</td>
+                <td>27.6%</td>
+            </tr>
+        
+            <tr>
+                <td>Absolut 80 Proof</td>
+                <td>$1124687.0</td>
+                <td>24.78%</td>
+            </tr>
+        
+            <tr>
+                <td>Tito's Handmade Vodka</td>
+                <td>$1102945.56</td>
+                <td>22.89%</td>
+            </tr>
+        
+            <tr>
+                <td>Kendall Jackson Chard Vt RSV</td>
+                <td>$875616.52</td>
+                <td>37.64%</td>
+            </tr>
+        
+            <tr>
+                <td>Grey Goose Vodka</td>
+                <td>$863060.2</td>
+                <td>25.5%</td>
+            </tr>
+        
+            <tr>
+                <td>Tanqueray</td>
+                <td>$764820.06</td>
+                <td>28.97%</td>
+            </tr>
+        
+            <tr>
+                <td>Jim Beam</td>
+                <td>$691369.7</td>
+                <td>28.39%</td>
+            </tr>
+        
+            <tr>
+                <td>Dewars White Label</td>
+                <td>$687355.54</td>
+                <td>31.4%</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+
+    <h2>Top products by Margin</h2>
+    <p>
+        This table highlights the most efficient products in the portfolio in terms of profitability relative to revenue.<br>
+        <b>How to read it:</b><br>
+        These products generate the highest return per dollar sold. They are not necessarily the biggest revenue drivers, but they are the most efficient from a profitability perspective. <br>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Profit</th>
+                <th>Margin %</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        
+            <tr>
+                <td>Viberti Chard</td>
+                <td>$257.06</td>
+                <td>83.4%</td>
+            </tr>
+        
+            <tr>
+                <td>Jack Daniels Tennessee Fire</td>
+                <td>$52951.36</td>
+                <td>74.92%</td>
+            </tr>
+        
+            <tr>
+                <td>R M Woodbridge Moscato</td>
+                <td>$752.43</td>
+                <td>72.66%</td>
+            </tr>
+        
+            <tr>
+                <td>Twisted Cab Svgn Cal</td>
+                <td>$697.68</td>
+                <td>71.86%</td>
+            </tr>
+        
+            <tr>
+                <td>Our Daily Red Cab Svgn</td>
+                <td>$412.56</td>
+                <td>71.19%</td>
+            </tr>
+        
+            <tr>
+                <td>Merriam Vyds Rose of Pnt Nr</td>
+                <td>$5437.04</td>
+                <td>69.38%</td>
+            </tr>
+        
+            <tr>
+                <td>Murphy-Goode Pnt Nr</td>
+                <td>$785.2</td>
+                <td>69.05%</td>
+            </tr>
+        
+            <tr>
+                <td>Circadia Cab Svgn Napa Vly</td>
+                <td>$51.02</td>
+                <td>68.04%</td>
+            </tr>
+        
+            <tr>
+                <td>Scala Dei Negre Priorat</td>
+                <td>$532.64</td>
+                <td>67.63%</td>
+            </tr>
+        
+            <tr>
+                <td>Ch Pagodes de Cos 10 Brdx</td>
+                <td>$67.53</td>
+                <td>67.54%</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+
+    <h2>Top Brands by Profit</h2>
+    <p>
+       This table aggregates performance at the brand level, combining all products under each supplier.<br>
+        <b>How to read it:</b><br>
+       Brands represent suppliers or manufacturers. This view helps identify which partners contribute most to overall profitability and are strategically important for business stability. <br>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Brand_id</th>
+                <th>Product</th>
+                <th>Profit</th>
+                <th>Margin %</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        
+            <tr>
+                <td>1233</td>
+                <td>Jack Daniels No 7 Black</td>
+                <td>$1370292.28</td>
+                <td>26.86%</td>
+            </tr>
+        
+            <tr>
+                <td>3545</td>
+                <td>Ketel One Vodka</td>
+                <td>$1249613.8</td>
+                <td>29.59%</td>
+            </tr>
+        
+            <tr>
+                <td>4261</td>
+                <td>Capt Morgan Spiced Rum</td>
+                <td>$1235310.84</td>
+                <td>27.6%</td>
+            </tr>
+        
+            <tr>
+                <td>8068</td>
+                <td>Absolut 80 Proof</td>
+                <td>$1124687.0</td>
+                <td>24.78%</td>
+            </tr>
+        
+            <tr>
+                <td>3405</td>
+                <td>Tito's Handmade Vodka</td>
+                <td>$1102945.56</td>
+                <td>22.89%</td>
+            </tr>
+        
+            <tr>
+                <td>6570</td>
+                <td>Kendall Jackson Chard Vt RSV</td>
+                <td>$875616.52</td>
+                <td>37.64%</td>
+            </tr>
+        
+            <tr>
+                <td>3858</td>
+                <td>Grey Goose Vodka</td>
+                <td>$863060.2</td>
+                <td>25.5%</td>
+            </tr>
+        
+            <tr>
+                <td>3489</td>
+                <td>Tanqueray</td>
+                <td>$764820.06</td>
+                <td>28.97%</td>
+            </tr>
+        
+            <tr>
+                <td>1376</td>
+                <td>Jim Beam</td>
+                <td>$691369.7</td>
+                <td>28.39%</td>
+            </tr>
+        
+            <tr>
+                <td>2663</td>
+                <td>Dewars White Label</td>
+                <td>$687355.54</td>
+                <td>31.4%</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+    
+    <h2>Top Brands by Margin</h2>
+    <p>
+        This table highlights brands that generate the highest profitability efficiency.<br>
+        <b>How to read it:</b><br>
+        These brands may not necessarily generate the most total revenue, but they maximize profitability per dollar sold. They are often candidates for premium positioning or strategic growth.<br>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Brand_id</th>
+                <th>Product</th>
+                <th>Profit</th>
+                <th>Margin %</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        
+            <tr>
+                <td>18627</td>
+                <td>Viberti Chard</td>
+                <td>$257.06</td>
+                <td>83.4%</td>
+            </tr>
+        
+            <tr>
+                <td>1771</td>
+                <td>Jack Daniels Tennessee Fire</td>
+                <td>$52951.36</td>
+                <td>74.92%</td>
+            </tr>
+        
+            <tr>
+                <td>12218</td>
+                <td>R M Woodbridge Moscato</td>
+                <td>$752.43</td>
+                <td>72.66%</td>
+            </tr>
+        
+            <tr>
+                <td>13583</td>
+                <td>Twisted Cab Svgn Cal</td>
+                <td>$697.68</td>
+                <td>71.86%</td>
+            </tr>
+        
+            <tr>
+                <td>22567</td>
+                <td>Our Daily Red Cab Svgn</td>
+                <td>$412.56</td>
+                <td>71.19%</td>
+            </tr>
+        
+            <tr>
+                <td>15860</td>
+                <td>Merriam Vyds Rose of Pnt Nr</td>
+                <td>$5437.04</td>
+                <td>69.38%</td>
+            </tr>
+        
+            <tr>
+                <td>13688</td>
+                <td>Murphy-Goode Pnt Nr</td>
+                <td>$785.2</td>
+                <td>69.05%</td>
+            </tr>
+        
+            <tr>
+                <td>23137</td>
+                <td>Circadia Cab Svgn Napa Vly</td>
+                <td>$51.02</td>
+                <td>68.04%</td>
+            </tr>
+        
+            <tr>
+                <td>44278</td>
+                <td>Scala Dei Negre Priorat</td>
+                <td>$532.64</td>
+                <td>67.63%</td>
+            </tr>
+        
+            <tr>
+                <td>20066</td>
+                <td>Ch Pagodes de Cos 10 Brdx</td>
+                <td>$67.53</td>
+                <td>67.54%</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+
+    <h2>Unprofitable Products</h2>
+        <p>
+            This table identifies products that are generating negative gross profit, meaning their cost structure exceeds their revenue contribution. <br>
+            <b>How to read it:</b><br>
+            These products are financially unsustainable. They either need pricing adjustments, cost renegotiation, or removal from the portfolio to prevent continued losses.<br>
+        </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Loss</th>
+                <th>Loss Per Unit</th>
+                <th>Recommendation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        
+            <tr>
+                <td>High Valley Znfdl</td>
+                <td class="negative">
+                    $-24762.39
+                </td>
+                <td>6.26</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Feudi Di San Gregorio Fiano</td>
+                <td class="negative">
+                    $-20221.65
+                </td>
+                <td>3.53</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Buehler Znfdl Napa</td>
+                <td class="negative">
+                    $-14470.0
+                </td>
+                <td>1.44</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Moletto Prosecco Della Marc</td>
+                <td class="negative">
+                    $-12576.64
+                </td>
+                <td>1.73</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Clayhouse Adobe Cntrl Cst Wh</td>
+                <td class="negative">
+                    $-12434.0
+                </td>
+                <td>1.34</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Beringer Quantum Red Napa Vl</td>
+                <td class="negative">
+                    $-12112.08
+                </td>
+                <td>11.3</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Jim Beam Black</td>
+                <td class="negative">
+                    $-11121.6
+                </td>
+                <td>0.59</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Margaride's Chard Arinto</td>
+                <td class="negative">
+                    $-7942.08
+                </td>
+                <td>2.32</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Stolichnaya Hot Vodka</td>
+                <td class="negative">
+                    $-7918.75
+                </td>
+                <td>4.52</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Midnight Moon Cranberry</td>
+                <td class="negative">
+                    $-7015.57
+                </td>
+                <td>1.4</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Lyeth Estate Meritage N Cst</td>
+                <td class="negative">
+                    $-6713.05
+                </td>
+                <td>-1.35</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>GH Mumm Rose</td>
+                <td class="negative">
+                    $-6136.2
+                </td>
+                <td>6.7</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Brotte Espirit CdR</td>
+                <td class="negative">
+                    $-6059.8
+                </td>
+                <td>1.13</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Kilbeggan Irish Whiskey</td>
+                <td class="negative">
+                    $-6055.84
+                </td>
+                <td>3.95</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Southern Comfort</td>
+                <td class="negative">
+                    $-5375.64
+                </td>
+                <td>0.09</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>C'est La Vie Pnt Nr/Syrh VDP</td>
+                <td class="negative">
+                    $-5321.26
+                </td>
+                <td>1.32</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Bacardi Limon Rum</td>
+                <td class="negative">
+                    $-5110.14
+                </td>
+                <td>0.37</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Angeline Cab Svgn California</td>
+                <td class="negative">
+                    $-4125.71
+                </td>
+                <td>0.1</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>C'Est La Vie Chard/Svgn Bl</td>
+                <td class="negative">
+                    $-4044.16
+                </td>
+                <td>1.02</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Cavit Select Red Blend</td>
+                <td class="negative">
+                    $-4010.15
+                </td>
+                <td>2.55</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Sammy's Beach Bar Rum</td>
+                <td class="negative">
+                    $-3997.6
+                </td>
+                <td>3.78</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Bonpas Ventoux Rouge Rhone</td>
+                <td class="negative">
+                    $-3939.2
+                </td>
+                <td>1.2</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Cline Merlot Sonoma Coast</td>
+                <td class="negative">
+                    $-3896.18
+                </td>
+                <td>1.06</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Skyy Infusions Cranberry</td>
+                <td class="negative">
+                    $-3218.4
+                </td>
+                <td>1.27</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Butterfly Kiss Moscato</td>
+                <td class="negative">
+                    $-2886.66
+                </td>
+                <td>5.22</td>
+                <td>Drop this product</td>
+            </tr>
+        
+            <tr>
+                <td>Frescobaldi Tenuta Castglni</td>
+                <td class="negative">
+                    $-2823.56
+                </td>
+                <td>1.01</td>
+                <td>Drop this product</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
