@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 from src.utils.logger import logger
 from pathlib import Path
 from config import TEMPLATES
-#from weasyprint import HTML
+from weasyprint import HTML
 
 TEMPLATE_DIR = TEMPLATES
 OUTPUT_DIR = Path("output")
@@ -27,10 +27,7 @@ def build_report(
     html_file = OUTPUT_DIR / "report.html"
     pdf_file = OUTPUT_DIR / "report.pdf"
 
-    #html_file.write_text(html_content, encoding="utf-8")
-    #HTML(string=html_content, base_url=str(OUTPUT_DIR)).write_pdf(pdf_file)
+    html_file.write_text(html_content, encoding="utf-8")
+    HTML(string=html_content, base_url=str(OUTPUT_DIR)).write_pdf(pdf_file)
 
-    with open(html_file, "w", encoding="utf-8") as f:
-        f.write(html_content)
-        
     logger.info(f"Report generated: {html_file}")
