@@ -23,17 +23,12 @@ The objective was not only to answer the business questions, but also to design 
 
 ## Project Architecture Diagram
 ```mermaid
-Raw CSV Files 
-        ↓ 
-Staging Layer 
-        ↓ 
-Cleaning & Validation Layer 
-        ↓ 
-Analytical Mart Layer 
-        ↓ 
-Business Analytical Layer 
-        ↓ 
-Builder Report
+flowchart TD
+    A[Raw CSV Files] --> B[Staging Layer]
+    B --> C[Cleaning & Validation Layer]
+    C --> D[Analytical Mart Layer]
+    D --> E[Business Analytical Layer]
+    E --> F[Builder Report]
 ```
 ## Pipeline design
 ### 1. Ingestion Layer
