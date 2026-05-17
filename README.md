@@ -69,7 +69,7 @@ Gross Profit = Revenue - COGS
 Gross Margin % = Gross Profit / Revenue
 ```
 ### 4. Business Analytical Layer 
-This layer calculate the main metricts for report:
+This layer obtains the main metricts for report:
 * Summary metrics
 * Top Products by Profit
 * Top Products by Margin
